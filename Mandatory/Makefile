@@ -10,6 +10,7 @@ NASM = nasm
 NASMFLAGS = -f elf64
 
 FILES = 	ft_strlen.s \
+			ft_strcpy.s \
 
 OBJ_FILES = $(FILES:.s=.o)
 
@@ -26,6 +27,7 @@ clean :
 
 fclean : clean
 	rm -f $(NAME_LIB) $(OBJ_FILES)
+	rm -rf test.out
 
 re : 
 	make fclean
