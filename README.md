@@ -1,6 +1,22 @@
 # libasm
 **A gentle guide to lobotomy**
 
+## Overview
+The purpose of this project is to get familiar with x86-64 assembly language 
+- Understand how functions are called at a low level
+- Write assembly code that compiles into a library
+- Mimic a subset of the standard C library functions
+
+## Requirements
+- The library must compile with nasm
+- The library should implement the following functions:
+  - `ft_strlen`: calculate the length of a string
+  - `ft_strcpy`: copy a string
+  - `ft_strcmp`: compare two strings
+  - `ft_write`: write output to a file descriptor
+  - `ft_read`: read input from a file descriptor
+  - `ft_strdup`: duplicate a string
+
 ## Testing Program
 
 This repository includes a `main.c` file which acts as a test suite for the provided asm functions  
