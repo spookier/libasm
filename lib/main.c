@@ -45,11 +45,13 @@ int main(void)
 	// test_strlen("alex");
 	// test_strcpy("spoolex");
 
-	char dest[100];
-	char *str;
+	//printf("%d\n", strcmp("Aa", "A"));
 
-	str = ft_strcpy(dest, "what is this omg");
-	printf("%s", str);
+	//int res =  strcmp("A", "AAA");
+	int res =  ft_strcmp("1", "1");
+	printf("\n%d\n", res);
+
+
 
 	return (0);
 }

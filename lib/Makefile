@@ -11,6 +11,7 @@ NASMFLAGS = -f elf64
 
 FILES = 	ft_strlen.s \
 			ft_strcpy.s \
+			ft_strcmp.s \
 
 OBJ_FILES = $(FILES:.s=.o)
 
