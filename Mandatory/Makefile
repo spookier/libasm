@@ -27,20 +27,20 @@ clean :
 
 fclean : clean
 	rm -f $(NAME_LIB) $(OBJ_FILES)
-	rm -rf test.out
+	rm -rf ./a.out
 
 re : 
 	make fclean
 	make all
 
 
-# TO TEST ALL FUNCTIONS AS ASKED IN THE SUBJECT
+# OUR MAIN TO TEST THE FUNCTIONS
 
-test :
+testmain :
 	make re
-	$(CC) $(CFLAGS) main.c -L. -lasm -o test.out
-	./test.out
+	$(CC) $(CFLAGS) main.c -L. -lasm
+	./a.out
 
-	 
+
 
 .PHONY : all clean fclean re test
